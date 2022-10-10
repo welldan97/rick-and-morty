@@ -1,5 +1,5 @@
 import { memo } from 'react';
-import AnchorButton from '../lib/AnchorButton';
+import Link from '../lib/Link';
 import DlItem from '../lib/DlItem';
 import Character from '../types/Character';
 
@@ -19,9 +19,13 @@ const Card = memo(({ character }: Props) => (
         <DlItem term="Gender" definition={character.gender} />
       </dl>
       <div className="card-actions justify-center">
-        <AnchorButton href={`/details?id=${character.id}`}>
+        <Link
+          href="/details"
+          query={() => ({ id: `${character.id}` })}
+          className="btn btn-primary"
+        >
           Details
-        </AnchorButton>
+        </Link>
       </div>
     </div>
   </div>

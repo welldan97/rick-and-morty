@@ -4,6 +4,10 @@ import Character from '../types/Character';
 import Episode from '../types/Episode';
 import Response from '../types/Response';
 
+interface Filter {
+  page?: string;
+}
+
 export const apiSlice = createApi({
   reducerPath: 'api',
   baseQuery: fetchBaseQuery({
@@ -11,8 +15,8 @@ export const apiSlice = createApi({
   }),
 
   endpoints: builder => ({
-    indexCharacters: builder.query<Response, void>({
-      query: () => 'character',
+    indexCharacters: builder.query<Response, Filter>({
+      query: ({ page }) => `character/?page=${page || 1}`,
     }),
 
     getCharacter: builder.query<Character, number>({
