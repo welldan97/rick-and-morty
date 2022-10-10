@@ -1,5 +1,5 @@
 import { memo } from 'react';
-import { useGetCharactersQuery } from '../api/apiSlice';
+import { useIndexCharactersQuery } from '../api/apiSlice';
 import Navbar from '../lib/Navbar';
 import Character from '../types/Character';
 import Cards from './Cards';
@@ -20,7 +20,7 @@ const Main = memo(({ characters }: Props) => (
 ));
 
 export default memo(() => {
-  const { data, isSuccess } = useGetCharactersQuery(undefined);
+  const { data, isSuccess } = useIndexCharactersQuery(undefined);
   if (!isSuccess) return null;
   const { results } = data;
   return <Main characters={results} />;
