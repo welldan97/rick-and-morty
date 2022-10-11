@@ -5,27 +5,19 @@ import Document, {
   Main,
   NextScript,
 } from 'next/document';
-import { useMemo } from 'react';
 import { ServerStyleSheet } from 'styled-components';
 
-const MyDocument = () => {
-  const bodyStyle = useMemo(
-    () => ({
-      height: '100vh',
-    }),
-    [],
-  );
-
-  return (
-    <Html>
-      <Head />
-      <body style={bodyStyle}>
-        <Main />
-        <NextScript />
-      </body>
-    </Html>
-  );
-};
+const MyDocument = () => (
+  <Html className="bg-base-300">
+    <Head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </Head>
+    <body>
+      <Main />
+      <NextScript />
+    </body>
+  </Html>
+);
 
 MyDocument.getInitialProps = async (ctx: DocumentContext) => {
   const sheet = new ServerStyleSheet();

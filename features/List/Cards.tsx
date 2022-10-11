@@ -7,7 +7,7 @@ interface Props {
 }
 
 const Cards = memo(({ characters }: Props) => (
-  <main className="p-8 flex flex-wrap">
+  <main className="px-2 pt-4 lg:pt-6 flex flex-wrap justify-evenly">
     {characters.map(c => (
       <Card key={c.id} character={c} />
     ))}

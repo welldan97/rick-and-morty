@@ -8,21 +8,34 @@ interface Props {
 }
 
 const Card = memo(({ character }: Props) => (
-  <div className="card w-64 bg-base-100 shadow-md mx-4 mb-8">
-    <figure>
-      <img src={character.image} alt={character.name} className="w-100" />
-    </figure>
-    <div className="card-body">
-      <h2 className="card-title">{character.name}</h2>
-      <dl>
+  <div className="card w-64 bg-base-100 shadow-md mx-3 mb-6">
+    <Link
+      href="/details"
+      query={() => ({ id: `${character.id}` })}
+      tabIndex={-1}
+    >
+      <figure>
+        <img
+          src={character.image}
+          alt={character.name}
+          className="w-64 h-64 bg-base-200"
+        />
+      </figure>
+    </Link>
+
+    <div className="card-body p-6">
+      <h2 className="card-title overflow-hidden whitespace-nowrap text-ellipsis inline">
+        {character.name}
+      </h2>
+      <dl className="overflow-hidden whitespace-nowrap text-ellipsis">
         <DlItem term="Specie" definition={character.species} />
         <DlItem term="Gender" definition={character.gender} />
       </dl>
-      <div className="card-actions justify-center">
+      <div className="card-actions justify-center pt-4">
         <Link
           href="/details"
           query={() => ({ id: `${character.id}` })}
-          className="btn btn-primary"
+          className="btn btn-primary w-full"
         >
           Details
         </Link>

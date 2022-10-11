@@ -20,10 +20,14 @@ export default (key: string, defaultValue?: string) => {
       ]),
     );
 
-    router.replace({
-      pathname: router.pathname,
-      query: fn(prevQuery),
-    });
+    router.replace(
+      {
+        pathname: router.pathname,
+        query: fn(prevQuery),
+      },
+      undefined,
+      { scroll: false },
+    );
   };
 
   return { value, isReady: router.isReady, setValue };

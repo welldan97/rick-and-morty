@@ -4,10 +4,10 @@ import useRouterState from '../lib/useRouterState';
 
 interface Props {
   name: string;
-  status?: string;
-  gender?: string;
   onChangeName: (value: string) => void;
+  status?: string;
   onChangeStatus: (value: string) => void;
+  gender?: string;
   onChangeGender: (value: string) => void;
 }
 const Sidebar = memo(
@@ -19,8 +19,8 @@ const Sidebar = memo(
     gender,
     onChangeGender,
   }: Props) => (
-    <aside className="bg-base-100 w-64 shrink-0 shadow-lg z-10">
-      <div className="form-control w-full max-w-xs">
+    <aside className="bg-base-200 w-full sm:w-64 shrink-0 shadow-lg z-10 fixed left-0 top-0 h-full px-8 pt-20">
+      <div className="form-control w-full">
         <label className="label" htmlFor="input-name">
           <span className="label-text">Name</span>
         </label>
@@ -33,7 +33,7 @@ const Sidebar = memo(
           onChange={e => onChangeName(e.target.value)}
         />
       </div>
-      <div className="form-control w-full max-w-xs">
+      <div className="form-control w-full">
         <label className="label" htmlFor="input-status">
           <span className="label-text">Status</span>
         </label>
@@ -49,7 +49,7 @@ const Sidebar = memo(
           <option value="unknown">Unknown</option>
         </select>
       </div>
-      <div className="form-control w-full max-w-xs">
+      <div className="form-control w-full">
         <label className="label" htmlFor="input-gender">
           <span className="label-text">Gender</span>
         </label>

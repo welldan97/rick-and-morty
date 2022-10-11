@@ -8,5 +8,7 @@ module.exports = {
     extend: {},
   },
   plugins: [daisyUi],
-  daisyui: {},
+  daisyui: {
+    themes: ['lemonade'],
+  },
 };

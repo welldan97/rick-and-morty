@@ -9,6 +9,7 @@ interface AnchorProps extends ComponentPropsWithoutRef<'a'> {
   query?: (prevQuery: Record<string, string>) => Record<string, string>;
   children: React.ReactNode;
   isDisabled?: boolean;
+  scroll?: boolean;
 }
 
 const Button = memo(
@@ -17,6 +18,7 @@ const Button = memo(
     href,
     query = prevQuery => prevQuery,
     isDisabled = false,
+    scroll = true,
     ...rest
   }: AnchorProps) => {
     const router = useRouter();
@@ -33,7 +35,7 @@ const Button = memo(
     if (isDisabled)
       return <span {...omit(['children', 'href'], rest)}>{children}</span>;
     return (
-      <Link href={hrefWithQuery}>
+      <Link href={hrefWithQuery} scroll={scroll}>
         <a {...omit(['children', 'href'], rest)} href={hrefWithQuery}>
           {children}
         </a>
