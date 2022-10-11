@@ -1,8 +1,7 @@
-import omit from 'lodash/fp/omit';
-import Link from 'next/link';
 import { useRouter } from 'next/router';
 
 import { ComponentPropsWithoutRef, memo } from 'react';
+import BaseLink from './Presentational';
 
 interface AnchorProps extends ComponentPropsWithoutRef<'a'> {
   href: string;
@@ -12,7 +11,7 @@ interface AnchorProps extends ComponentPropsWithoutRef<'a'> {
   scroll?: boolean;
 }
 
-const Button = memo(
+const Link = memo(
   ({
     children,
     href,
@@ -32,16 +31,17 @@ const Button = memo(
     const queryString = new URLSearchParams(query(prevQuery)).toString();
     const hrefWithQuery = queryString ? `${href}?${queryString}` : href;
 
-    if (isDisabled)
-      return <span {...omit(['children', 'href'], rest)}>{children}</span>;
     return (
-      <Link href={hrefWithQuery} scroll={scroll}>
-        <a {...omit(['children', 'href'], rest)} href={hrefWithQuery}>
-          {children}
-        </a>
-      </Link>
+      <BaseLink
+        href={hrefWithQuery}
+        isDisabled={isDisabled}
+        scroll={scroll}
+        {...rest}
+      >
+        {children}
+      </BaseLink>
     );
   },
 );
 
-export default Button;
+export default Link;

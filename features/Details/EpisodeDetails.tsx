@@ -14,7 +14,7 @@ const EpisodeDetails = memo(({ episode }: Props) => (
     <dl>
       <DlItem term="ID" definition={episode.id} />
       <DlItem term="Name" definition={episode.name} />
-      <DlItem term="Air Date" definition={episode.air_date} />
+      <DlItem term="Air Date" definition={episode.airDate} />
       <DlItem term="Episode" definition={episode.episode} />
     </dl>
   </>

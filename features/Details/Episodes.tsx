@@ -4,20 +4,16 @@ import Character from '../types/Character';
 import EpisodeDetails from './EpisodeDetails';
 
 interface Props {
-  episodes: Character['episode'];
+  episodes: Character['episodes'];
 }
 
-const parseEpisode = (episode: string) =>
-  Number(episode.replace('https://rickandmortyapi.com/api/episode/', ''));
-
 const Episodes = memo(({ episodes }: Props) => {
-  const parsedEpisodes = episodes.map(parseEpisode);
-  const [episodeId, setEpisodeId] = useState<number>(parsedEpisodes[0]);
+  const [episodeId, setEpisodeId] = useState<number>(episodes[0]);
 
   return (
     <div className="shadow-md rounded-lg  bg-base-300">
       <div className="tabs tabs-boxed">
-        {parsedEpisodes.map(e => (
+        {episodes.map(e => (
           <button
             key={e}
             className={classNames(
