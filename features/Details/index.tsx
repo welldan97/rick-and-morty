@@ -35,7 +35,7 @@ const Details = memo(({ character, onBack }: Props) => (
         <img
           src={character.image}
           alt={character.name}
-          className="rounded-xl shadow-md"
+          className="rounded-xl shadow-md w-72 h-auto aspect-square  max-w-full bg-base-300"
         />
         <div>
           <h2 className="text-4xl font-bold mb-8">{character.name}</h2>
