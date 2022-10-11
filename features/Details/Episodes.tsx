@@ -15,12 +15,15 @@ const Episodes = memo(({ episodes }: Props) => {
   const [episodeId, setEpisodeId] = useState<number>(parsedEpisodes[0]);
 
   return (
-    <div>
+    <div className="shadow-md rounded-lg  bg-base-300">
       <div className="tabs tabs-boxed">
         {parsedEpisodes.map(e => (
           <button
             key={e}
-            className={classNames('tab', e === episodeId && 'tab-active')}
+            className={classNames(
+              'tab tab-sm w-28 justify-start',
+              e === episodeId && 'tab-active',
+            )}
             onClick={() => setEpisodeId(e)}
             type="button"
           >
@@ -28,7 +31,9 @@ const Episodes = memo(({ episodes }: Props) => {
           </button>
         ))}
       </div>
-      <EpisodeDetails episodeId={episodeId} />
+      <div className="p-8 pt-6">
+        <EpisodeDetails episodeId={episodeId} />
+      </div>
     </div>
   );
 });

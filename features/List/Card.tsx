@@ -31,7 +31,7 @@ const Card = memo(({ character }: Props) => (
         <DlItem term="Specie" definition={character.species} />
         <DlItem term="Gender" definition={character.gender} />
       </dl>
-      <div className="card-actions justify-center pt-4">
+      <div className="card-actions justify-center pt-3">
         <Link
           href="/details"
           query={() => ({ id: `${character.id}` })}

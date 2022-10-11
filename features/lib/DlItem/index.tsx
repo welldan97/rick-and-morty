@@ -8,7 +8,7 @@ interface Props {
 const Item = memo(({ term, definition }: Props) => (
   <>
     <dt className="font-bold inline">{term}:</dt>
-    <dd className="inline after:block"> {definition || '—'}</dd>
+    <dd className="inline after:block after:mt-1"> {definition || '—'}</dd>
   </>
 ));
 

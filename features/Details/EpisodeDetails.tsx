@@ -9,12 +9,15 @@ interface Props {
 }
 
 const EpisodeDetails = memo(({ episode }: Props) => (
-  <dl>
-    <DlItem term="ID" definition={episode.id} />
-    <DlItem term="Name" definition={episode.name} />
-    <DlItem term="Air Date" definition={episode.air_date} />
-    <DlItem term="Episode" definition={episode.episode} />
-  </dl>
+  <>
+    <h2 className="text-2xl font-bold mb-4">Episode {episode.id}</h2>
+    <dl>
+      <DlItem term="ID" definition={episode.id} />
+      <DlItem term="Name" definition={episode.name} />
+      <DlItem term="Air Date" definition={episode.air_date} />
+      <DlItem term="Episode" definition={episode.episode} />
+    </dl>
+  </>
 ));
 
 interface ContainerProps {
