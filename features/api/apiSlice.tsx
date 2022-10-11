@@ -6,6 +6,9 @@ import Response from '../types/Response';
 
 interface Filter {
   page?: string;
+  name?: string;
+  status?: string;
+  gender?: string;
 }
 
 export const apiSlice = createApi({
@@ -16,7 +19,10 @@ export const apiSlice = createApi({
 
   endpoints: builder => ({
     indexCharacters: builder.query<Response, Filter>({
-      query: ({ page }) => `character/?page=${page || 1}`,
+      query: ({ page, name, status, gender }) =>
+        `character/?page=${page || 1}&name=${name || ''}&status=${
+          status || ''
+        }&gender=${gender || ''}`,
     }),
 
     getCharacter: builder.query<Character, number>({

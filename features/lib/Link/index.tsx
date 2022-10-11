@@ -1,6 +1,6 @@
 import omit from 'lodash/fp/omit';
 import Link from 'next/link';
-import { useRouter, Router } from 'next/router';
+import { useRouter } from 'next/router';
 
 import { ComponentPropsWithoutRef, memo } from 'react';
 

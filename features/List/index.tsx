@@ -27,8 +27,12 @@ const Main = memo(({ characters, pageCount }: Props) => (
 
 export default memo(() => {
   const { value: page, isReady } = useRouterState('page');
+  const { value: name } = useRouterState('name');
+  const { value: status } = useRouterState('status');
+  const { value: gender } = useRouterState('gender');
+
   const { data, isSuccess } = useIndexCharactersQuery(
-    { page },
+    { page, name, status, gender },
     { skip: !isReady },
   );
 

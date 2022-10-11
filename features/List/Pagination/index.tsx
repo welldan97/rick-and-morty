@@ -20,6 +20,7 @@ const Pagination = memo(({ buttonData }: Props) => (
           b.isActive && 'btn-active',
           b.isDisabled && 'btn-disabled',
         )}
+        key={`${b.type}-${b.pageNumber}`}
         query={prevQuery => ({ ...prevQuery, page: `${b.pageNumber}` })}
         isDisabled={b.isDisabled}
       >
