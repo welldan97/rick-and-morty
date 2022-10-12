@@ -26,7 +26,7 @@ const Data = memo(({ character }: Props) => (
           definition={new Intl.DateTimeFormat('en-US', {
             dateStyle: 'short',
             timeStyle: 'short',
-          }).format(character.created)}
+          }).format(new Date(character.created))}
         />
       </dl>
     </div>

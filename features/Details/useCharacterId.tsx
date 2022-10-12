@@ -9,7 +9,7 @@ interface Result {
 const useCharacterId = (): Result => {
   const { value, isReady } = useSearchParams();
   const id = Number(value.id);
-  const isError = Number.isNaN(id);
+  const isError = isReady && Number.isNaN(id);
 
   return {
     id,

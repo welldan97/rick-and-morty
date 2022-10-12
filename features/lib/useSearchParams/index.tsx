@@ -26,6 +26,5 @@ export default () => {
       { scroll: false },
     );
   };
-
   return { value, isReady: router.isReady, setValue };
 };

@@ -20,7 +20,7 @@ const Input = memo(({ value, label, id, options, onChange }: Props) => (
       value={String(value)}
     >
       {options.map(({ value: v, label: l }) => (
-        <option key={v} value={v}>
+        <option key={l} value={v}>
           {l}
         </option>
       ))}

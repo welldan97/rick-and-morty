@@ -1,9 +1,8 @@
 import RawCharacter from './RawCharacter';
 
-type Character = Omit<RawCharacter, 'origin' | 'episode' | 'created'> & {
+type Character = Omit<RawCharacter, 'origin' | 'episode'> & {
   origin: string;
   episodes: number[];
-  created: Date;
 };
 
 export default Character;

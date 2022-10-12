@@ -8,7 +8,6 @@ const transformCharacter = (character: RawCharacter): Character => ({
   ...character,
   origin: character.origin.name,
   episodes: character.episode.map(episode => parseEpisode(episode)),
-  created: new Date(character.created),
 });
 
 export default transformCharacter;

@@ -18,7 +18,7 @@ const Input = memo(({ value, label, placeholder, id, onChange }: Props) => (
       placeholder={placeholder}
       className="input input-bordered"
       id={id}
-      value={value}
+      value={value ?? ''}
       onChange={e => onChange(e.target.value)}
     />
   </div>
