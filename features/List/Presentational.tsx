@@ -35,7 +35,10 @@ const List = memo(({ isFiltersOpen, onChangeIsFiltersOpen }: Props) => (
       {isFiltersOpen && <Sidebar />}
       <DataWrapper>
         {({ characters, pageCount }) => (
-          <div className="flex flex-col items-center -mt-32 sm:pl-64">
+          <div
+            className="flex flex-col items-center -mt-32 sm:pl-64"
+            data-testid="wrapper"
+          >
             <Cards characters={characters} />
             <Pagination pageCount={pageCount} />
             <ScrollToTop

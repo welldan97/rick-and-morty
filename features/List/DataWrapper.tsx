@@ -16,6 +16,7 @@ export default memo(({ children }: Props) => {
     { page, name, status, gender },
     { skip: !isReady },
   );
+
   if (!isSuccess)
     // TODO: Fix error type
     // eslint-disable-next-line @typescript-eslint/no-explicit-any

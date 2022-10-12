@@ -1,4 +1,5 @@
-import { Router, useRouter } from 'next/router';
+import { Router } from 'next/router';
+import useRouter from '../useRouter';
 
 const parseQuery = (routerQuery: Router['query']): Record<string, string> =>
   Object.fromEntries(

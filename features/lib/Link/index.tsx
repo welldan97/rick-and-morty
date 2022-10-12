@@ -1,6 +1,5 @@
-import { useRouter } from 'next/router';
-
 import { ComponentPropsWithoutRef, memo } from 'react';
+import useRouter from '../useRouter';
 import BaseLink from './Presentational';
 
 interface AnchorProps extends ComponentPropsWithoutRef<'a'> {

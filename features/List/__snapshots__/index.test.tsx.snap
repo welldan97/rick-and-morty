@@ -1,0 +1,1520 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`List render 1`] = `
+<div>
+  <nav
+    class="navbar shadow-lg bg-base-100 z-50 sticky top-0 h-48 -translate-y-32 pt-32 flex items-center py-0 w-full"
+  >
+    <button
+      class="btn btn-ghost rounded-btn sm:hidden btn-active"
+      type="button"
+    >
+      <svg
+        class="w-6 h-6"
+        fill="currentColor"
+        height="1em"
+        stroke="currentColor"
+        stroke-width="0"
+        viewBox="0 0 24 24"
+        width="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
+        />
+      </svg>
+    </button>
+    <a
+      href="/"
+    >
+      <img
+        alt="Rick & Morty"
+        class="h-10 mx-2"
+        src="logo.png"
+      />
+    </a>
+  </nav>
+  <div
+    class="flex"
+  >
+    <aside
+      class="bg-base-200 w-full sm:w-64 shrink-0 shadow-lg z-10 fixed left-0 top-0 h-full px-8 pt-20"
+    >
+      <div
+        class="form-control w-full"
+      >
+        <label
+          class="label"
+          for="input-name"
+        >
+          <span
+            class="label-text"
+          >
+            Name
+          </span>
+        </label>
+        <input
+          class="input input-bordered"
+          id="input-name"
+          placeholder="Rick Sanchez"
+          type="text"
+          value=""
+        />
+      </div>
+      <div
+        class="form-control w-full"
+      >
+        <label
+          class="label"
+          for="input-status"
+        >
+          <span
+            class="label-text"
+          >
+            Status
+          </span>
+        </label>
+        <select
+          class="select select-bordered"
+          id="input-status"
+        >
+          <option>
+            All
+          </option>
+          <option
+            value="Alive"
+          >
+            Alive
+          </option>
+          <option
+            value="Dead"
+          >
+            Dead
+          </option>
+          <option
+            value="unknown"
+          >
+            Unknown
+          </option>
+        </select>
+      </div>
+      <div
+        class="form-control w-full"
+      >
+        <label
+          class="label"
+          for="input-gender"
+        >
+          <span
+            class="label-text"
+          >
+            Gender
+          </span>
+        </label>
+        <select
+          class="select select-bordered"
+          id="input-gender"
+        >
+          <option>
+            All
+          </option>
+          <option
+            value="female"
+          >
+            Female
+          </option>
+          <option
+            value="male"
+          >
+            Male
+          </option>
+          <option
+            value="genderless"
+          >
+            Genderless
+          </option>
+          <option
+            value="unknown"
+          >
+            Unknown
+          </option>
+        </select>
+      </div>
+    </aside>
+    <div
+      class="flex flex-col items-center -mt-32 sm:pl-64"
+      data-testid="wrapper"
+    >
+      <main
+        class="px-2 pt-4 lg:pt-6 flex flex-wrap justify-evenly"
+      >
+        <div
+          class="card w-64 bg-base-100 shadow-md mx-3 mb-6"
+        >
+          <a
+            href="/details?id=1"
+            tabindex="-1"
+          >
+            <figure>
+              <img
+                alt="Rick Sanchez"
+                class="w-64 h-64 bg-base-200"
+                src="https://rickandmortyapi.com/api/character/avatar/1.jpeg"
+              />
+            </figure>
+          </a>
+          <div
+            class="card-body p-6"
+          >
+            <h2
+              class="card-title overflow-hidden whitespace-nowrap text-ellipsis inline"
+            >
+              Rick Sanchez
+            </h2>
+            <dl
+              class="overflow-hidden whitespace-nowrap text-ellipsis"
+            >
+              <dt
+                class="font-bold inline"
+              >
+                Specie
+                :
+              </dt>
+              <dd
+                class="inline after:block after:mt-1"
+              >
+                 
+                Human
+              </dd>
+              <dt
+                class="font-bold inline"
+              >
+                Gender
+                :
+              </dt>
+              <dd
+                class="inline after:block after:mt-1"
+              >
+                 
+                Male
+              </dd>
+            </dl>
+            <div
+              class="card-actions justify-center pt-3"
+            >
+              <a
+                class="btn btn-primary w-full"
+                href="/details?id=1"
+              >
+                Details
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="card w-64 bg-base-100 shadow-md mx-3 mb-6"
+        >
+          <a
+            href="/details?id=2"
+            tabindex="-1"
+          >
+            <figure>
+              <img
+                alt="Morty Smith"
+                class="w-64 h-64 bg-base-200"
+                src="https://rickandmortyapi.com/api/character/avatar/2.jpeg"
+              />
+            </figure>
+          </a>
+          <div
+            class="card-body p-6"
+          >
+            <h2
+              class="card-title overflow-hidden whitespace-nowrap text-ellipsis inline"
+            >
+              Morty Smith
+            </h2>
+            <dl
+              class="overflow-hidden whitespace-nowrap text-ellipsis"
+            >
+              <dt
+                class="font-bold inline"
+              >
+                Specie
+                :
+              </dt>
+              <dd
+                class="inline after:block after:mt-1"
+              >
+                 
+                Human
+              </dd>
+              <dt
+                class="font-bold inline"
+              >
+                Gender
+                :
+              </dt>
+              <dd
+                class="inline after:block after:mt-1"
+              >
+                 
+                Male
+              </dd>
+            </dl>
+            <div
+              class="card-actions justify-center pt-3"
+            >
+              <a
+                class="btn btn-primary w-full"
+                href="/details?id=2"
+              >
+                Details
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="card w-64 bg-base-100 shadow-md mx-3 mb-6"
+        >
+          <a
+            href="/details?id=3"
+            tabindex="-1"
+          >
+            <figure>
+              <img
+                alt="Summer Smith"
+                class="w-64 h-64 bg-base-200"
+                src="https://rickandmortyapi.com/api/character/avatar/3.jpeg"
+              />
+            </figure>
+          </a>
+          <div
+            class="card-body p-6"
+          >
+            <h2
+              class="card-title overflow-hidden whitespace-nowrap text-ellipsis inline"
+            >
+              Summer Smith
+            </h2>
+            <dl
+              class="overflow-hidden whitespace-nowrap text-ellipsis"
+            >
+              <dt
+                class="font-bold inline"
+              >
+                Specie
+                :
+              </dt>
+              <dd
+                class="inline after:block after:mt-1"
+              >
+                 
+                Human
+              </dd>
+              <dt
+                class="font-bold inline"
+              >
+                Gender
+                :
+              </dt>
+              <dd
+                class="inline after:block after:mt-1"
+              >
+                 
+                Female
+              </dd>
+            </dl>
+            <div
+              class="card-actions justify-center pt-3"
+            >
+              <a
+                class="btn btn-primary w-full"
+                href="/details?id=3"
+              >
+                Details
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="card w-64 bg-base-100 shadow-md mx-3 mb-6"
+        >
+          <a
+            href="/details?id=4"
+            tabindex="-1"
+          >
+            <figure>
+              <img
+                alt="Beth Smith"
+                class="w-64 h-64 bg-base-200"
+                src="https://rickandmortyapi.com/api/character/avatar/4.jpeg"
+              />
+            </figure>
+          </a>
+          <div
+            class="card-body p-6"
+          >
+            <h2
+              class="card-title overflow-hidden whitespace-nowrap text-ellipsis inline"
+            >
+              Beth Smith
+            </h2>
+            <dl
+              class="overflow-hidden whitespace-nowrap text-ellipsis"
+            >
+              <dt
+                class="font-bold inline"
+              >
+                Specie
+                :
+              </dt>
+              <dd
+                class="inline after:block after:mt-1"
+              >
+                 
+                Human
+              </dd>
+              <dt
+                class="font-bold inline"
+              >
+                Gender
+                :
+              </dt>
+              <dd
+                class="inline after:block after:mt-1"
+              >
+                 
+                Female
+              </dd>
+            </dl>
+            <div
+              class="card-actions justify-center pt-3"
+            >
+              <a
+                class="btn btn-primary w-full"
+                href="/details?id=4"
+              >
+                Details
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="card w-64 bg-base-100 shadow-md mx-3 mb-6"
+        >
+          <a
+            href="/details?id=5"
+            tabindex="-1"
+          >
+            <figure>
+              <img
+                alt="Jerry Smith"
+                class="w-64 h-64 bg-base-200"
+                src="https://rickandmortyapi.com/api/character/avatar/5.jpeg"
+              />
+            </figure>
+          </a>
+          <div
+            class="card-body p-6"
+          >
+            <h2
+              class="card-title overflow-hidden whitespace-nowrap text-ellipsis inline"
+            >
+              Jerry Smith
+            </h2>
+            <dl
+              class="overflow-hidden whitespace-nowrap text-ellipsis"
+            >
+              <dt
+                class="font-bold inline"
+              >
+                Specie
+                :
+              </dt>
+              <dd
+                class="inline after:block after:mt-1"
+              >
+                 
+                Human
+              </dd>
+              <dt
+                class="font-bold inline"
+              >
+                Gender
+                :
+              </dt>
+              <dd
+                class="inline after:block after:mt-1"
+              >
+                 
+                Male
+              </dd>
+            </dl>
+            <div
+              class="card-actions justify-center pt-3"
+            >
+              <a
+                class="btn btn-primary w-full"
+                href="/details?id=5"
+              >
+                Details
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="card w-64 bg-base-100 shadow-md mx-3 mb-6"
+        >
+          <a
+            href="/details?id=6"
+            tabindex="-1"
+          >
+            <figure>
+              <img
+                alt="Abadango Cluster Princess"
+                class="w-64 h-64 bg-base-200"
+                src="https://rickandmortyapi.com/api/character/avatar/6.jpeg"
+              />
+            </figure>
+          </a>
+          <div
+            class="card-body p-6"
+          >
+            <h2
+              class="card-title overflow-hidden whitespace-nowrap text-ellipsis inline"
+            >
+              Abadango Cluster Princess
+            </h2>
+            <dl
+              class="overflow-hidden whitespace-nowrap text-ellipsis"
+            >
+              <dt
+                class="font-bold inline"
+              >
+                Specie
+                :
+              </dt>
+              <dd
+                class="inline after:block after:mt-1"
+              >
+                 
+                Alien
+              </dd>
+              <dt
+                class="font-bold inline"
+              >
+                Gender
+                :
+              </dt>
+              <dd
+                class="inline after:block after:mt-1"
+              >
+                 
+                Female
+              </dd>
+            </dl>
+            <div
+              class="card-actions justify-center pt-3"
+            >
+              <a
+                class="btn btn-primary w-full"
+                href="/details?id=6"
+              >
+                Details
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="card w-64 bg-base-100 shadow-md mx-3 mb-6"
+        >
+          <a
+            href="/details?id=7"
+            tabindex="-1"
+          >
+            <figure>
+              <img
+                alt="Abradolf Lincler"
+                class="w-64 h-64 bg-base-200"
+                src="https://rickandmortyapi.com/api/character/avatar/7.jpeg"
+              />
+            </figure>
+          </a>
+          <div
+            class="card-body p-6"
+          >
+            <h2
+              class="card-title overflow-hidden whitespace-nowrap text-ellipsis inline"
+            >
+              Abradolf Lincler
+            </h2>
+            <dl
+              class="overflow-hidden whitespace-nowrap text-ellipsis"
+            >
+              <dt
+                class="font-bold inline"
+              >
+                Specie
+                :
+              </dt>
+              <dd
+                class="inline after:block after:mt-1"
+              >
+                 
+                Human
+              </dd>
+              <dt
+                class="font-bold inline"
+              >
+                Gender
+                :
+              </dt>
+              <dd
+                class="inline after:block after:mt-1"
+              >
+                 
+                Male
+              </dd>
+            </dl>
+            <div
+              class="card-actions justify-center pt-3"
+            >
+              <a
+                class="btn btn-primary w-full"
+                href="/details?id=7"
+              >
+                Details
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="card w-64 bg-base-100 shadow-md mx-3 mb-6"
+        >
+          <a
+            href="/details?id=8"
+            tabindex="-1"
+          >
+            <figure>
+              <img
+                alt="Adjudicator Rick"
+                class="w-64 h-64 bg-base-200"
+                src="https://rickandmortyapi.com/api/character/avatar/8.jpeg"
+              />
+            </figure>
+          </a>
+          <div
+            class="card-body p-6"
+          >
+            <h2
+              class="card-title overflow-hidden whitespace-nowrap text-ellipsis inline"
+            >
+              Adjudicator Rick
+            </h2>
+            <dl
+              class="overflow-hidden whitespace-nowrap text-ellipsis"
+            >
+              <dt
+                class="font-bold inline"
+              >
+                Specie
+                :
+              </dt>
+              <dd
+                class="inline after:block after:mt-1"
+              >
+                 
+                Human
+              </dd>
+              <dt
+                class="font-bold inline"
+              >
+                Gender
+                :
+              </dt>
+              <dd
+                class="inline after:block after:mt-1"
+              >
+                 
+                Male
+              </dd>
+            </dl>
+            <div
+              class="card-actions justify-center pt-3"
+            >
+              <a
+                class="btn btn-primary w-full"
+                href="/details?id=8"
+              >
+                Details
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="card w-64 bg-base-100 shadow-md mx-3 mb-6"
+        >
+          <a
+            href="/details?id=9"
+            tabindex="-1"
+          >
+            <figure>
+              <img
+                alt="Agency Director"
+                class="w-64 h-64 bg-base-200"
+                src="https://rickandmortyapi.com/api/character/avatar/9.jpeg"
+              />
+            </figure>
+          </a>
+          <div
+            class="card-body p-6"
+          >
+            <h2
+              class="card-title overflow-hidden whitespace-nowrap text-ellipsis inline"
+            >
+              Agency Director
+            </h2>
+            <dl
+              class="overflow-hidden whitespace-nowrap text-ellipsis"
+            >
+              <dt
+                class="font-bold inline"
+              >
+                Specie
+                :
+              </dt>
+              <dd
+                class="inline after:block after:mt-1"
+              >
+                 
+                Human
+              </dd>
+              <dt
+                class="font-bold inline"
+              >
+                Gender
+                :
+              </dt>
+              <dd
+                class="inline after:block after:mt-1"
+              >
+                 
+                Male
+              </dd>
+            </dl>
+            <div
+              class="card-actions justify-center pt-3"
+            >
+              <a
+                class="btn btn-primary w-full"
+                href="/details?id=9"
+              >
+                Details
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="card w-64 bg-base-100 shadow-md mx-3 mb-6"
+        >
+          <a
+            href="/details?id=10"
+            tabindex="-1"
+          >
+            <figure>
+              <img
+                alt="Alan Rails"
+                class="w-64 h-64 bg-base-200"
+                src="https://rickandmortyapi.com/api/character/avatar/10.jpeg"
+              />
+            </figure>
+          </a>
+          <div
+            class="card-body p-6"
+          >
+            <h2
+              class="card-title overflow-hidden whitespace-nowrap text-ellipsis inline"
+            >
+              Alan Rails
+            </h2>
+            <dl
+              class="overflow-hidden whitespace-nowrap text-ellipsis"
+            >
+              <dt
+                class="font-bold inline"
+              >
+                Specie
+                :
+              </dt>
+              <dd
+                class="inline after:block after:mt-1"
+              >
+                 
+                Human
+              </dd>
+              <dt
+                class="font-bold inline"
+              >
+                Gender
+                :
+              </dt>
+              <dd
+                class="inline after:block after:mt-1"
+              >
+                 
+                Male
+              </dd>
+            </dl>
+            <div
+              class="card-actions justify-center pt-3"
+            >
+              <a
+                class="btn btn-primary w-full"
+                href="/details?id=10"
+              >
+                Details
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="card w-64 bg-base-100 shadow-md mx-3 mb-6"
+        >
+          <a
+            href="/details?id=11"
+            tabindex="-1"
+          >
+            <figure>
+              <img
+                alt="Albert Einstein"
+                class="w-64 h-64 bg-base-200"
+                src="https://rickandmortyapi.com/api/character/avatar/11.jpeg"
+              />
+            </figure>
+          </a>
+          <div
+            class="card-body p-6"
+          >
+            <h2
+              class="card-title overflow-hidden whitespace-nowrap text-ellipsis inline"
+            >
+              Albert Einstein
+            </h2>
+            <dl
+              class="overflow-hidden whitespace-nowrap text-ellipsis"
+            >
+              <dt
+                class="font-bold inline"
+              >
+                Specie
+                :
+              </dt>
+              <dd
+                class="inline after:block after:mt-1"
+              >
+                 
+                Human
+              </dd>
+              <dt
+                class="font-bold inline"
+              >
+                Gender
+                :
+              </dt>
+              <dd
+                class="inline after:block after:mt-1"
+              >
+                 
+                Male
+              </dd>
+            </dl>
+            <div
+              class="card-actions justify-center pt-3"
+            >
+              <a
+                class="btn btn-primary w-full"
+                href="/details?id=11"
+              >
+                Details
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="card w-64 bg-base-100 shadow-md mx-3 mb-6"
+        >
+          <a
+            href="/details?id=12"
+            tabindex="-1"
+          >
+            <figure>
+              <img
+                alt="Alexander"
+                class="w-64 h-64 bg-base-200"
+                src="https://rickandmortyapi.com/api/character/avatar/12.jpeg"
+              />
+            </figure>
+          </a>
+          <div
+            class="card-body p-6"
+          >
+            <h2
+              class="card-title overflow-hidden whitespace-nowrap text-ellipsis inline"
+            >
+              Alexander
+            </h2>
+            <dl
+              class="overflow-hidden whitespace-nowrap text-ellipsis"
+            >
+              <dt
+                class="font-bold inline"
+              >
+                Specie
+                :
+              </dt>
+              <dd
+                class="inline after:block after:mt-1"
+              >
+                 
+                Human
+              </dd>
+              <dt
+                class="font-bold inline"
+              >
+                Gender
+                :
+              </dt>
+              <dd
+                class="inline after:block after:mt-1"
+              >
+                 
+                Male
+              </dd>
+            </dl>
+            <div
+              class="card-actions justify-center pt-3"
+            >
+              <a
+                class="btn btn-primary w-full"
+                href="/details?id=12"
+              >
+                Details
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="card w-64 bg-base-100 shadow-md mx-3 mb-6"
+        >
+          <a
+            href="/details?id=13"
+            tabindex="-1"
+          >
+            <figure>
+              <img
+                alt="Alien Googah"
+                class="w-64 h-64 bg-base-200"
+                src="https://rickandmortyapi.com/api/character/avatar/13.jpeg"
+              />
+            </figure>
+          </a>
+          <div
+            class="card-body p-6"
+          >
+            <h2
+              class="card-title overflow-hidden whitespace-nowrap text-ellipsis inline"
+            >
+              Alien Googah
+            </h2>
+            <dl
+              class="overflow-hidden whitespace-nowrap text-ellipsis"
+            >
+              <dt
+                class="font-bold inline"
+              >
+                Specie
+                :
+              </dt>
+              <dd
+                class="inline after:block after:mt-1"
+              >
+                 
+                Alien
+              </dd>
+              <dt
+                class="font-bold inline"
+              >
+                Gender
+                :
+              </dt>
+              <dd
+                class="inline after:block after:mt-1"
+              >
+                 
+                unknown
+              </dd>
+            </dl>
+            <div
+              class="card-actions justify-center pt-3"
+            >
+              <a
+                class="btn btn-primary w-full"
+                href="/details?id=13"
+              >
+                Details
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="card w-64 bg-base-100 shadow-md mx-3 mb-6"
+        >
+          <a
+            href="/details?id=14"
+            tabindex="-1"
+          >
+            <figure>
+              <img
+                alt="Alien Morty"
+                class="w-64 h-64 bg-base-200"
+                src="https://rickandmortyapi.com/api/character/avatar/14.jpeg"
+              />
+            </figure>
+          </a>
+          <div
+            class="card-body p-6"
+          >
+            <h2
+              class="card-title overflow-hidden whitespace-nowrap text-ellipsis inline"
+            >
+              Alien Morty
+            </h2>
+            <dl
+              class="overflow-hidden whitespace-nowrap text-ellipsis"
+            >
+              <dt
+                class="font-bold inline"
+              >
+                Specie
+                :
+              </dt>
+              <dd
+                class="inline after:block after:mt-1"
+              >
+                 
+                Alien
+              </dd>
+              <dt
+                class="font-bold inline"
+              >
+                Gender
+                :
+              </dt>
+              <dd
+                class="inline after:block after:mt-1"
+              >
+                 
+                Male
+              </dd>
+            </dl>
+            <div
+              class="card-actions justify-center pt-3"
+            >
+              <a
+                class="btn btn-primary w-full"
+                href="/details?id=14"
+              >
+                Details
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="card w-64 bg-base-100 shadow-md mx-3 mb-6"
+        >
+          <a
+            href="/details?id=15"
+            tabindex="-1"
+          >
+            <figure>
+              <img
+                alt="Alien Rick"
+                class="w-64 h-64 bg-base-200"
+                src="https://rickandmortyapi.com/api/character/avatar/15.jpeg"
+              />
+            </figure>
+          </a>
+          <div
+            class="card-body p-6"
+          >
+            <h2
+              class="card-title overflow-hidden whitespace-nowrap text-ellipsis inline"
+            >
+              Alien Rick
+            </h2>
+            <dl
+              class="overflow-hidden whitespace-nowrap text-ellipsis"
+            >
+              <dt
+                class="font-bold inline"
+              >
+                Specie
+                :
+              </dt>
+              <dd
+                class="inline after:block after:mt-1"
+              >
+                 
+                Alien
+              </dd>
+              <dt
+                class="font-bold inline"
+              >
+                Gender
+                :
+              </dt>
+              <dd
+                class="inline after:block after:mt-1"
+              >
+                 
+                Male
+              </dd>
+            </dl>
+            <div
+              class="card-actions justify-center pt-3"
+            >
+              <a
+                class="btn btn-primary w-full"
+                href="/details?id=15"
+              >
+                Details
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="card w-64 bg-base-100 shadow-md mx-3 mb-6"
+        >
+          <a
+            href="/details?id=16"
+            tabindex="-1"
+          >
+            <figure>
+              <img
+                alt="Amish Cyborg"
+                class="w-64 h-64 bg-base-200"
+                src="https://rickandmortyapi.com/api/character/avatar/16.jpeg"
+              />
+            </figure>
+          </a>
+          <div
+            class="card-body p-6"
+          >
+            <h2
+              class="card-title overflow-hidden whitespace-nowrap text-ellipsis inline"
+            >
+              Amish Cyborg
+            </h2>
+            <dl
+              class="overflow-hidden whitespace-nowrap text-ellipsis"
+            >
+              <dt
+                class="font-bold inline"
+              >
+                Specie
+                :
+              </dt>
+              <dd
+                class="inline after:block after:mt-1"
+              >
+                 
+                Alien
+              </dd>
+              <dt
+                class="font-bold inline"
+              >
+                Gender
+                :
+              </dt>
+              <dd
+                class="inline after:block after:mt-1"
+              >
+                 
+                Male
+              </dd>
+            </dl>
+            <div
+              class="card-actions justify-center pt-3"
+            >
+              <a
+                class="btn btn-primary w-full"
+                href="/details?id=16"
+              >
+                Details
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="card w-64 bg-base-100 shadow-md mx-3 mb-6"
+        >
+          <a
+            href="/details?id=17"
+            tabindex="-1"
+          >
+            <figure>
+              <img
+                alt="Annie"
+                class="w-64 h-64 bg-base-200"
+                src="https://rickandmortyapi.com/api/character/avatar/17.jpeg"
+              />
+            </figure>
+          </a>
+          <div
+            class="card-body p-6"
+          >
+            <h2
+              class="card-title overflow-hidden whitespace-nowrap text-ellipsis inline"
+            >
+              Annie
+            </h2>
+            <dl
+              class="overflow-hidden whitespace-nowrap text-ellipsis"
+            >
+              <dt
+                class="font-bold inline"
+              >
+                Specie
+                :
+              </dt>
+              <dd
+                class="inline after:block after:mt-1"
+              >
+                 
+                Human
+              </dd>
+              <dt
+                class="font-bold inline"
+              >
+                Gender
+                :
+              </dt>
+              <dd
+                class="inline after:block after:mt-1"
+              >
+                 
+                Female
+              </dd>
+            </dl>
+            <div
+              class="card-actions justify-center pt-3"
+            >
+              <a
+                class="btn btn-primary w-full"
+                href="/details?id=17"
+              >
+                Details
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="card w-64 bg-base-100 shadow-md mx-3 mb-6"
+        >
+          <a
+            href="/details?id=18"
+            tabindex="-1"
+          >
+            <figure>
+              <img
+                alt="Antenna Morty"
+                class="w-64 h-64 bg-base-200"
+                src="https://rickandmortyapi.com/api/character/avatar/18.jpeg"
+              />
+            </figure>
+          </a>
+          <div
+            class="card-body p-6"
+          >
+            <h2
+              class="card-title overflow-hidden whitespace-nowrap text-ellipsis inline"
+            >
+              Antenna Morty
+            </h2>
+            <dl
+              class="overflow-hidden whitespace-nowrap text-ellipsis"
+            >
+              <dt
+                class="font-bold inline"
+              >
+                Specie
+                :
+              </dt>
+              <dd
+                class="inline after:block after:mt-1"
+              >
+                 
+                Human
+              </dd>
+              <dt
+                class="font-bold inline"
+              >
+                Gender
+                :
+              </dt>
+              <dd
+                class="inline after:block after:mt-1"
+              >
+                 
+                Male
+              </dd>
+            </dl>
+            <div
+              class="card-actions justify-center pt-3"
+            >
+              <a
+                class="btn btn-primary w-full"
+                href="/details?id=18"
+              >
+                Details
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="card w-64 bg-base-100 shadow-md mx-3 mb-6"
+        >
+          <a
+            href="/details?id=19"
+            tabindex="-1"
+          >
+            <figure>
+              <img
+                alt="Antenna Rick"
+                class="w-64 h-64 bg-base-200"
+                src="https://rickandmortyapi.com/api/character/avatar/19.jpeg"
+              />
+            </figure>
+          </a>
+          <div
+            class="card-body p-6"
+          >
+            <h2
+              class="card-title overflow-hidden whitespace-nowrap text-ellipsis inline"
+            >
+              Antenna Rick
+            </h2>
+            <dl
+              class="overflow-hidden whitespace-nowrap text-ellipsis"
+            >
+              <dt
+                class="font-bold inline"
+              >
+                Specie
+                :
+              </dt>
+              <dd
+                class="inline after:block after:mt-1"
+              >
+                 
+                Human
+              </dd>
+              <dt
+                class="font-bold inline"
+              >
+                Gender
+                :
+              </dt>
+              <dd
+                class="inline after:block after:mt-1"
+              >
+                 
+                Male
+              </dd>
+            </dl>
+            <div
+              class="card-actions justify-center pt-3"
+            >
+              <a
+                class="btn btn-primary w-full"
+                href="/details?id=19"
+              >
+                Details
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="card w-64 bg-base-100 shadow-md mx-3 mb-6"
+        >
+          <a
+            href="/details?id=20"
+            tabindex="-1"
+          >
+            <figure>
+              <img
+                alt="Ants in my Eyes Johnson"
+                class="w-64 h-64 bg-base-200"
+                src="https://rickandmortyapi.com/api/character/avatar/20.jpeg"
+              />
+            </figure>
+          </a>
+          <div
+            class="card-body p-6"
+          >
+            <h2
+              class="card-title overflow-hidden whitespace-nowrap text-ellipsis inline"
+            >
+              Ants in my Eyes Johnson
+            </h2>
+            <dl
+              class="overflow-hidden whitespace-nowrap text-ellipsis"
+            >
+              <dt
+                class="font-bold inline"
+              >
+                Specie
+                :
+              </dt>
+              <dd
+                class="inline after:block after:mt-1"
+              >
+                 
+                Human
+              </dd>
+              <dt
+                class="font-bold inline"
+              >
+                Gender
+                :
+              </dt>
+              <dd
+                class="inline after:block after:mt-1"
+              >
+                 
+                Male
+              </dd>
+            </dl>
+            <div
+              class="card-actions justify-center pt-3"
+            >
+              <a
+                class="btn btn-primary w-full"
+                href="/details?id=20"
+              >
+                Details
+              </a>
+            </div>
+          </div>
+        </div>
+      </main>
+      <div
+        class="btn-group mt-6 mb-12"
+      >
+        <a
+          class="btn w-10 bg-base-200 hover:bg-base-100 border-none text-black focus:z-10"
+          href="/?page=1"
+        >
+          «
+        </a>
+        <span
+          class="btn w-10 bg-base-200 hover:bg-base-100 border-none text-black focus:z-10 opacity-20 cursor-not-allowed"
+        >
+          ‹
+        </span>
+        <a
+          class="btn w-10 bg-base-200 hover:bg-base-100 border-none text-black focus:z-10 btn-active hover:text-black"
+          href="/?page=1"
+        >
+          1
+        </a>
+        <a
+          class="btn w-10 bg-base-200 hover:bg-base-100 border-none text-black focus:z-10 hidden lg:flex"
+          href="/?page=2"
+        >
+          2
+        </a>
+        <a
+          class="btn w-10 bg-base-200 hover:bg-base-100 border-none text-black focus:z-10 hidden lg:flex"
+          href="/?page=3"
+        >
+          3
+        </a>
+        <a
+          class="btn w-10 bg-base-200 hover:bg-base-100 border-none text-black focus:z-10 opacity-75 hover:opacity-100 hidden lg:flex"
+          href="/?page=18"
+        >
+          …
+        </a>
+        <a
+          class="btn w-10 bg-base-200 hover:bg-base-100 border-none text-black focus:z-10 hidden lg:flex"
+          href="/?page=34"
+        >
+          34
+        </a>
+        <a
+          class="btn w-10 bg-base-200 hover:bg-base-100 border-none text-black focus:z-10 hidden lg:flex"
+          href="/?page=35"
+        >
+          35
+        </a>
+        <a
+          class="btn w-10 bg-base-200 hover:bg-base-100 border-none text-black focus:z-10 hidden lg:flex"
+          href="/?page=36"
+        >
+          36
+        </a>
+        <a
+          class="btn w-10 bg-base-200 hover:bg-base-100 border-none text-black focus:z-10 hidden lg:flex"
+          href="/?page=37"
+        >
+          37
+        </a>
+        <a
+          class="btn w-10 bg-base-200 hover:bg-base-100 border-none text-black focus:z-10 hidden lg:flex"
+          href="/?page=38"
+        >
+          38
+        </a>
+        <a
+          class="btn w-10 bg-base-200 hover:bg-base-100 border-none text-black focus:z-10 hidden lg:flex"
+          href="/?page=39"
+        >
+          39
+        </a>
+        <a
+          class="btn w-10 bg-base-200 hover:bg-base-100 border-none text-black focus:z-10 hidden lg:flex"
+          href="/?page=40"
+        >
+          40
+        </a>
+        <a
+          class="btn w-10 bg-base-200 hover:bg-base-100 border-none text-black focus:z-10 hidden lg:flex"
+          href="/?page=41"
+        >
+          41
+        </a>
+        <a
+          class="btn w-10 bg-base-200 hover:bg-base-100 border-none text-black focus:z-10 hidden lg:flex"
+          href="/?page=42"
+        >
+          42
+        </a>
+        <a
+          class="btn w-10 bg-base-200 hover:bg-base-100 border-none text-black focus:z-10"
+          href="/?page=2"
+        >
+          ›
+        </a>
+        <a
+          class="btn w-10 bg-base-200 hover:bg-base-100 border-none text-black focus:z-10"
+          href="/?page=42"
+        >
+          »
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;

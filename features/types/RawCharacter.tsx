@@ -20,4 +20,6 @@ export default interface RawCharacter {
   origin: Location;
   created: string;
   episode: Episode[];
+  location: unknown;
+  url: unknown;
 }
